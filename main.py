@@ -3,11 +3,8 @@ import turtle
 
 tree = SeasonTree()
 
-# Position the turtle at the desired starting location
-tree.t.penup()
-tree.t.goto(0, -250)  # Positioning the turtle at the bottom center of the screen
-tree.t.left(90)  # Pointing the turtle upwards to start drawing the tree
-tree.t.pendown()
+# Set the season and draw the tree
+tree.set_season("spring")
+tree.draw_tree(150)
 
-tree.draw_tree(100)
 turtle.done()
