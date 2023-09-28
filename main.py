@@ -1,20 +1,13 @@
+from The_class import SeasonTree
 import turtle
-from inventory import draw_tree
 
-# Screen
-screen = turtle.Screen()
-screen.bgcolor("white")
-screen.title("Fractal Tree")
-# Turtle
-t = turtle.Turtle()
-t.speed(0)
-#t.hideturtle()
+tree = SeasonTree()
 
+# Position the turtle at the desired starting location
+tree.t.penup()
+tree.t.goto(0, -250)  # Positioning the turtle at the bottom center of the screen
+tree.t.left(90)  # Pointing the turtle upwards to start drawing the tree
+tree.t.pendown()
 
-t.penup()
-t.left(90)
-t.backward(100)
-t.pendown()
-
-draw_tree(100, t)
+tree.draw_tree(100)
 turtle.done()
